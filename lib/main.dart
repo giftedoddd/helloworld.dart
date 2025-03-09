@@ -43,6 +43,54 @@ void controlStatements(final int firstNumber, final int secondNumber){
   }
 }
 
+// Operators
+void operators(int number){
+  double halfOfNumber =  number / 2;
+  int doubleOfNumber = number * 2;
+  int numberPlusOne = number + 1;
+  int numberMinusOne = number - 1;
+  print(halfOfNumber);
+  print(doubleOfNumber);
+  print(numberPlusOne);
+  print(numberMinusOne);
+
+  /*
+  It also has ++ and -- operation, like what we saw in java.
+  number++;
+  number--;
+  --number;
+  ++number;
+  */
+}
+
+void lists(){
+  // Lists can contain different data types with <dynamic> type can also be static with <int>
+  List <int> staticType = [1, 2, 3, 4];
+  List <dynamic> dynamicType = ["Hello", true, false, "World!"];
+  var anotherList = ["anObject", "anotherObject"];
+}
+
+void sets(){
+  // Sets are a datatype that does not allow duplicates and it's so fast in comparisons cause of it's hashing native
+  var mySet = {"he", "loo"};
+}
+
+void maps(){
+  var myMap = {
+    "Justin":"Male",
+    "Amanda":"Female"
+  };
+
+  Map<String, int> ages = {
+    "Justin":20,
+    "Amanda":18
+  };
+
+  ages.forEach((key, value){
+    print("$key, $value");
+  });
+}
+
 void main(){
   
 }
